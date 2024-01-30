@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		79DF24742B67DE38008F1815 /* RBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF24732B67DE38008F1815 /* RBApp.swift */; };
-		79DF24762B67DE38008F1815 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF24752B67DE38008F1815 /* ContentView.swift */; };
+		79DF24762B67DE38008F1815 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF24752B67DE38008F1815 /* MainView.swift */; };
 		79DF24782B67DE3A008F1815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79DF24772B67DE3A008F1815 /* Assets.xcassets */; };
 		79DF247B2B67DE3A008F1815 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79DF247A2B67DE3A008F1815 /* Preview Assets.xcassets */; };
+		79DF24822B68FFB2008F1815 /* ConstantsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF24812B68FFB2008F1815 /* ConstantsApp.swift */; };
+		79DF24842B68FFE0008F1815 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF24832B68FFE0008F1815 /* MainViewModel.swift */; };
+		79DF24862B68FFFA008F1815 /* MarathonBetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF24852B68FFFA008F1815 /* MarathonBetModel.swift */; };
+		79DF24882B69003D008F1815 /* AverageOddsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF24872B69003D008F1815 /* AverageOddsModel.swift */; };
+		79DF248A2B6901C3008F1815 /* ResultBet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF24892B6901C3008F1815 /* ResultBet.swift */; };
+		79DF24902B690492008F1815 /* CustomСellModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF248F2B690492008F1815 /* CustomСellModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79DF24702B67DE38008F1815 /* RB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DF24732B67DE38008F1815 /* RBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBApp.swift; sourceTree = "<group>"; };
-		79DF24752B67DE38008F1815 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		79DF24752B67DE38008F1815 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		79DF24772B67DE3A008F1815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79DF247A2B67DE3A008F1815 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79DF24812B68FFB2008F1815 /* ConstantsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsApp.swift; sourceTree = "<group>"; };
+		79DF24832B68FFE0008F1815 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		79DF24852B68FFFA008F1815 /* MarathonBetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonBetModel.swift; sourceTree = "<group>"; };
+		79DF24872B69003D008F1815 /* AverageOddsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageOddsModel.swift; sourceTree = "<group>"; };
+		79DF24892B6901C3008F1815 /* ResultBet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBet.swift; sourceTree = "<group>"; };
+		79DF248F2B690492008F1815 /* CustomСellModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomСellModifier.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				79DF24732B67DE38008F1815 /* RBApp.swift */,
-				79DF24752B67DE38008F1815 /* ContentView.swift */,
+				79DF248E2B690216008F1815 /* View */,
+				79DF248C2B6901FA008F1815 /* Model */,
+				79DF248D2B690208008F1815 /* ViewModel */,
+				79DF248B2B6901D9008F1815 /* Helpers */,
 				79DF24772B67DE3A008F1815 /* Assets.xcassets */,
 				79DF24792B67DE3A008F1815 /* Preview Content */,
 			);
@@ -65,6 +80,41 @@
 				79DF247A2B67DE3A008F1815 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79DF248B2B6901D9008F1815 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				79DF24812B68FFB2008F1815 /* ConstantsApp.swift */,
+				79DF24892B6901C3008F1815 /* ResultBet.swift */,
+				79DF248F2B690492008F1815 /* CustomСellModifier.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		79DF248C2B6901FA008F1815 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79DF24872B69003D008F1815 /* AverageOddsModel.swift */,
+				79DF24852B68FFFA008F1815 /* MarathonBetModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79DF248D2B690208008F1815 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				79DF24832B68FFE0008F1815 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		79DF248E2B690216008F1815 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79DF24752B67DE38008F1815 /* MainView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79DF24762B67DE38008F1815 /* ContentView.swift in Sources */,
+				79DF24762B67DE38008F1815 /* MainView.swift in Sources */,
+				79DF24882B69003D008F1815 /* AverageOddsModel.swift in Sources */,
+				79DF248A2B6901C3008F1815 /* ResultBet.swift in Sources */,
+				79DF24822B68FFB2008F1815 /* ConstantsApp.swift in Sources */,
+				79DF24902B690492008F1815 /* CustomСellModifier.swift in Sources */,
 				79DF24742B67DE38008F1815 /* RBApp.swift in Sources */,
+				79DF24862B68FFFA008F1815 /* MarathonBetModel.swift in Sources */,
+				79DF24842B68FFE0008F1815 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
